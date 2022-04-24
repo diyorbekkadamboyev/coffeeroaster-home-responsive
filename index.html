@@ -4,10 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <title>SCSS BEM STARTER</title>
+  <title>coffeeroaster-home</title>
 </head>
 <body>
+  <!------------------------------ HEADER ------------------------------->
+    <header class="header ">
+      <div class="container header__container">
+        <img class="header__logo-img" src="./images/logo.svg" width="236" height="26" alt="" srcset="./images/logo.svg 1x, ./images/logo@2x.svg 2x">
 
+        <navbar class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                HOME
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                ABOUT US
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                CREATE YOUR PLAN
+              </a>
+            </li>
+          </ul>
+        </navbar>
+
+        <button class="header__buttom">
+        </button>
+      </div>
+    </header>
+
+  <!------------------------------- MAIN -------------------------------->
+  <main class="main">
+    <div class="hero">
+      <div class="container hero--container">
+        <div class="hero__background-img">
+          <div class="hero__wrappr">
+            <h1 class="hero__heading">Great coffee made simple.</h1>
+  
+            <p class="hero__desc">
+             Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our   best roasters delivered directly to your door, at your schedule.
+            </p>
+  
+            <button class="btn">
+             Create your plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    <script src="./js/script.js">
+    </script>
 </body>
 </html>

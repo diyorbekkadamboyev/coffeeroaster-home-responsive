@@ -1,0 +1,138 @@
+.header {
+    padding: 44px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-img {
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    &__logo-img:hover {
+        opacity: 0.8;
+    }
+
+    &__logo-img:active {
+        opacity: 0.4;
+    }
+
+    .nav {
+        white-space: nowrap;
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__item + .nav__item {
+            margin-left: 33px;
+        }
+
+        &__link {
+            text-decoration: none;
+            font-family: 'Barlow';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: #83888F;
+            transition: color 0.3s;
+        }
+
+        &__link:hover {
+            color: #333D4B;
+        }
+
+        &__link:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__hamburger-img {
+        display: none;
+    }
+    
+    &__buttom {
+        display: none;
+        border: none;
+        background-color: white;
+        background-image: url("../images/hamburger.svg");
+        width: 16px;
+        height: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        .nav {
+            .nav__item + .nav__item {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .header {
+        position: relative;
+        .nav {
+            display: none;
+        }
+
+        &__hamburger-img {
+            display: block;
+        }
+
+        &__buttom {
+            display: block;
+        }
+    }
+
+        
+
+    .header--open .nav {
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);   
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        padding-bottom: 377px;
+        padding-top: 40px;
+
+        
+    }
+
+    .header--open {
+        
+    }
+    
+    .header--open .nav__list {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .header--open .nav__link {
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;  
+    }
+
+    .header--open .header__buttom {
+        background-image: url("../images/img.svg");
+        width: 14px;
+        height: 13px;
+    }
+    
+    
+}
