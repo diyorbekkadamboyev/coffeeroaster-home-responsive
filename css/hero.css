@@ -2,10 +2,11 @@
   height: 100%;
   background-image: url("../../images/background-img.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   padding: 0 20px;
+  border-radius: 5px;
 }
 
 .hero__wrappr {
@@ -40,7 +41,10 @@
 
 @media only screen and (max-width: 768px) {
   .hero__wrappr {
+    margin: 0;
     max-width: 398px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .hero__heading {
     font-family: 'Fraunces';
@@ -56,6 +60,49 @@
     line-height: 25px;
     color: #FEFCF7;
     opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero__backgroung-img {
+    height: 100%;
+    background-image: url("../../images/Object.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .hero__wrappr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FEFCF7;
+    max-width: 279px;
+    margin-bottom: 24px;
+  }
+  .hero__desc {
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FEFCF7;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 39px;
   }
 }
 /*# sourceMappingURL=hero.css.map */
