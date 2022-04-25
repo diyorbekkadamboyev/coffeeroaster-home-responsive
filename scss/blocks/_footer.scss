@@ -1,0 +1,115 @@
+.footer {
+    padding: 0 20px;
+    
+
+    &--container {
+        padding: 47px;
+        background: #2C343E;
+    }
+
+    &__logo-img {
+        cursor: pointer;
+    }
+
+    &__logo-img:hover {
+        opacity: 0.9;
+    }
+
+    &__logo-img:active {
+        opacity: 0.4;
+    }
+
+    &__wrappr {
+        max-width: 1180px;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 283px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 100px;
+    }
+
+    &__link {
+        margin: 0;
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #83888F;
+        transition: color 0.3s;
+    }
+
+    &__link:hover {
+        color: white;
+    }
+
+    &__right {
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .footer {
+        &__wrappr {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__left {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .footer {
+        &__wrappr {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__list {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer {
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

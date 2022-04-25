@@ -1,0 +1,121 @@
+.pick {
+    margin-bottom: 200px;
+    
+    &--container {
+        max-width: 1085px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__span {
+        margin: 0;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+        display: block;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        margin-bottom: 80px;
+    }
+
+    &__wrappr {
+        margin-bottom: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FDD6BA;
+        transform: rotate(-0.01deg);
+        margin-bottom: 38px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+        transform: rotate(-0.01deg);
+        max-width: 255px;
+        margin-bottom: 42px;
+    }
+
+    &__texts {
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        transform: rotate(-0.01deg);
+        max-width: 285px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 930px) {
+    .pick {
+        &__texts {
+            max-width: 250px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .pick {
+        &__img {
+            display: none;
+        }
+
+        &__wrappr {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__texts {
+            text-align: center;
+        }
+
+        &__span {
+            text-align: center;
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #83888F;
+        }
+
+        &__bottom-wrappr {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
