@@ -3,17 +3,25 @@
     margin-bottom: 200px;
 
     &--container {
-        background-image: url("../../images/background-color.png");
-        background-repeat: no-repeat;
-        background-size: contain;
+        // background-image: url("../../images/background-color.png");
+        // background-repeat: no-repeat;
+        // background-size: contain;
         max-width: 1320px;
         margin: 0 auto;
+        background: #2C343E;
+        border-radius: 10px;   
+        height: 60vh; 
+        margin-bottom: 400px;
+
     }
 
     &__boxs {
         max-width: 1180px;
         margin: 0 auto;
         padding: 0 20px;
+
+
+        
     }
 
     &__img-coffee {
@@ -25,12 +33,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        // position: relative;
     }
 
     &__top {
         display: flex;
         align-items: center;
         flex-direction: column;
+
     }
 
     &__heading {
@@ -81,6 +91,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 350px;
         
     }
 
@@ -105,6 +116,12 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+
+        }
+
+        &--container {
+            margin-bottom: 1350px;
+            height: 115vh;
         }
 
         &__box {

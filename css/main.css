@@ -792,11 +792,12 @@ img {
 }
 
 .work--container {
-  background-image: url("../../images/background-color.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   max-width: 1320px;
   margin: 0 auto;
+  background: #2C343E;
+  border-radius: 10px;
+  height: 60vh;
+  margin-bottom: 400px;
 }
 
 .work__boxs {
@@ -889,6 +890,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 350px;
 }
 
 .work__texts {
@@ -914,6 +916,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .work--container {
+    margin-bottom: 1350px;
+    height: 115vh;
   }
   .work__box {
     display: -webkit-box;
