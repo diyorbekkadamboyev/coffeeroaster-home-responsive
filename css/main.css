@@ -943,6 +943,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .work__box {
+    width: 270px;
+  }
+}
+
 .pick {
   margin-bottom: 200px;
 }

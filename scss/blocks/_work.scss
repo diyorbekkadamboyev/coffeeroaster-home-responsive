@@ -145,3 +145,11 @@
         
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .work {
+        &__box {
+            width: 270px;
+        }
+    }
+}
